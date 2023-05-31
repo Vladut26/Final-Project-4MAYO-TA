@@ -39,6 +39,5 @@ describe("Login user test suite", () => {
       .expectBodyContains("Login successful");
 
     token = resp.body.data.token;
-    console.log(token);
   });
 });

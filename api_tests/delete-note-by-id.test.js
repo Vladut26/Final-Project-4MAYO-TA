@@ -2,7 +2,7 @@ const { spec, request } = require("pactum");
 const { faker } = require("@faker-js/faker");
 const base_URL = "https://practice.expandtesting.com/notes/api/";
 
-describe("Create a note test suite", () => {
+describe("Delete a note by ID test suite", () => {
   before(() => {
     request.setDefaultTimeout(5000);
   });
@@ -61,7 +61,7 @@ describe("Create a note test suite", () => {
       .withBody(requestBodyNote);
 
     noteId = note.body.data.id;
-    console.log(noteId);
+    
   });
 
   it("Delete a note by ID test", async () => {
